@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <title>My lists</title>
+    <link rel="stylesheet" type="text/css" href="../css/lists/show.css">
+</head>
+
+<h1>List Page </h1>
+
+ <section id="anime-list">
+      <p>
+      <% if !current_user.lists.empty? %>
+      <table id="anime-data">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Race</th>
+      </tr>
+      
+        <% @list.animes.each do |c| %>
+        <tr>
+          <td><a href="/lists/<%=c.id%>"><%= c.name %></a></td>
+          <td><%= "add desc later" %></td>
+        </tr>
+        <% end %>
+       
+    </table>
+    <% else %>
+          <p id="p1"> No anime data! </p>
+        <% end %>
+
+      </p>
+      
+    </section>
+
+
+
+
+<a href="/lists/new" class="button">Create your list here!</a>
+<a href="/lists/<%= @list.id %>/edit">Edit</a>
+
+<form action="/lists/<%= @list.id %>/delete" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete" role="button" class="btn">
+</form>
+
+<a href="/lists"> Back </a>
+
+
+

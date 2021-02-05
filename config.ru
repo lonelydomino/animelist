@@ -9,6 +9,7 @@ if ActiveRecord::Base.connection.migration_context.needs_migration?
 end
 
 use UserController
+use ListsController
 use AnimeController
 use SessionsController
 run ApplicationController #can only use run one time, entry point of app

@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2021_02_05_051553) do
 
   create_table "lists", force: :cascade do |t|
     t.string "name"
+    t.string "desc"
     t.integer "owner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
