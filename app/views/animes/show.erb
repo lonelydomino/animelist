@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <title>My animes</title>
+    <link rel="stylesheet" type="text/css" href="../css/animes/show.css">
+</head>
+
+<h1>anime Page </h1>
+<div id="showstyle">
+    <h3 class="h">anime name:  <%= @anime.name %></h3>
+    <h3 class="h">anime genre: <%= @anime.genre %></h3>
+</div>
+<br><br>
+
+
+
+<a href="/animes/<%= @anime.id %>/edit">Edit</a>
+
+<form action="/animes/<%= @anime.id %>/delete" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete" role="button" class="btn">
+</form>
+
+<a href="/animes"> Back </a>
+
+
+

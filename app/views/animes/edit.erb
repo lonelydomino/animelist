@@ -1,0 +1,14 @@
+
+<form action="/animes/<%= @anime.id %>" method="post">
+<input type="hidden" name="_method" value="patch">
+  <label for="name">Name: </label>
+  <input type="text" name="anime[name]" id="name" value="<%= @anime.name %>">
+
+  <label for="race">Race: </label>
+  <input type="text" name="anime[race]" id="race" value="<%= @anime.race %>">
+
+  <label for="class">Class: </label>
+  <input type="text" name="anime[anime_class]" id="anime_class" value="<%= @anime.anime_class %>">
+
+  <input type="submit" value="Update">
+</form>

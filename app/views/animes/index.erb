@@ -1,0 +1,62 @@
+
+
+
+
+
+
+  <head>
+    <meta charset="UTF-8">
+    <title>My animes</title>
+    <link rel="stylesheet" type="text/css" href="../css/animes/index.css">
+  </head>
+
+  <body>
+    <header><br><br>
+      <h1>My animes</h1>
+
+      
+    </header>
+
+    <section id="anime-list">
+      <p>
+      <% if !current_user.animes.empty? %>
+      <table id="anime-data">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Race</th>
+      </tr>
+      
+        <% @animes.each do |c| %>
+        <tr>
+          <td><a href="/animes/<%=c.id%>"><%= c.name %></a></td>
+          <td><%= c.genre %></td>
+        </tr>
+        <% end %>
+       
+    </table>
+    <% else %>
+          <p id="p1"> No anime data! </p>
+        <% end %>
+
+
+
+      
+        
+     
+      </p>
+      <a href="/animes/new" class="button">Create your anime here!</a>
+    </section>
+
+     
+      <ul class="bot_nav">
+      <li><br>Contact me here!<p> <a href="mailto:michael.martinez2707@gmail.com">michael.martinez2707@gmail.com</a><br></p></li>
+      <li><br>Github page<p><a href="#" target="_blank">Github</a><br></p></li>
+      <li><br>Follow <p><a href="#" target="_blank">Twitch</a><a href="#" target="_blank">Tiktok</a><br> </p></li>
+</ul>
+
+
+
+      </body>
+  
+
