@@ -40,11 +40,12 @@
 
     
   <br>
-
+<% if !@list.animes.empty?%>
   <div class="button" id="button-3">
     <div id="circle"></div>
     <a href="/lists/<%= @list.id %>/edit">Edit</a>
   </div>
+  <% end %>
 
   <br>
 

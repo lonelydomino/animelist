@@ -12,7 +12,7 @@ body {
 }
   /* Comment */
 
-#character-list {
+#list-list {
     width: 800px;
     text-align: center;
     margin: 8px auto;
@@ -22,21 +22,21 @@ body {
 
 /* Styles Table */
 
-#character-data {
+#list-data {
 width: 100%;
 border-collapse: collapse;
 border: 1px solid black;
 }
 
-#character-data tr:nth-child(even){
+#list-data tr:nth-child(even){
       background-color: #0f4c75;
 }
 
-#character-data tr:nth-child(odd){
+#list-data tr:nth-child(odd){
     background-color: #3282b8;
 }
 
-#character-data th {
+#list-data th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center  ;
@@ -44,12 +44,12 @@ border: 1px solid black;
     color: rgb(12, 105, 0);
 }
 
-#character-data td, #character_data th {
+#list-data td, #list_data th {
 border: 1px solid rgb(8, 5, 141);
 padding: 8px;
 }
 
-#character-data tr:hover {
+#list-data tr:hover {
     background-color: rgb(56, 159, 255);
 }
 
@@ -107,5 +107,6 @@ td {
     cursor: pointer;
 
   }
+
 
 

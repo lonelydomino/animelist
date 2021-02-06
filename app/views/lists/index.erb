@@ -10,14 +10,13 @@
       <h1 id="h1lists">My lists</h1><br><br>
     </header>
 
-    <section id="anime-list">
-      <p>
+    <section id="list-list">
+      <p id="lists-pt">
         <% if !current_user.lists.empty? %>
-          <table id="anime-data">
+          <table id="list-data">
           <tr>
             <th>Name</th>
-            <th>Class</th>
-            <th>Race</th>
+            <th>Description</th>
           </tr>
           <% @lists.each do |c| %>
               <tr>
@@ -27,7 +26,7 @@
           <% end %>
           </table>
         <% else %>
-          <p id="p1"><br><br><br><br> No anime data!<br> </p>
+          <p id="p1"><br><br><br><br> No list data!<br> </p>
         <% end %>
 
       </p>
@@ -38,8 +37,8 @@
      <br><br><br><br><br><br><br><br>
       <ul class="bot_nav">
         <li><br>Contact me here!<p> <a href="mailto:michael.martinez2707@gmail.com">michael.martinez2707@gmail.com</a><br></p></li>
-        <li><br>Github page<p><a href="#" target="_blank">Github</a><br></p></li>
-        <li><br>Follow <p><a href="#" target="_blank">Twitch</a><a href="#" target="_blank">Tiktok</a><br> </p></li>
+        <li><br>Github page<p><a href="https://github.com/lonelydomino/listlist" target="_blank">Github</a><br></p></li>
+        <li><br>Follow <p><a href="https://www.twitch.tv/drmilomd" target="_blank">Twitch</a><br> </p></li>
       </ul>
       </body>
   

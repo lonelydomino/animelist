@@ -17,6 +17,9 @@ gem 'tux'
 gem 'bcrypt'
 gem 'dotenv'
 gem 'sinatra-flash', '~> 0.3.0'
+gem 'uri'
+gem 'openssl'
+gem 'net-http'
 
 group :development do
     gem 'sqlite3'
