@@ -1,0 +1,24 @@
+<head>
+    <meta charset="UTF-8">
+    <title>My lists</title>
+    <link rel="stylesheet" type="text/css" href="../css/animes/show.css">
+</head>
+
+<h1>Anime Data Page </h1>
+
+
+<table>
+<ul>
+    <li>Name: <%= @anime.name %></li>
+    <li>Genre: <%= @anime.genre %></li>
+</ul>
+
+</table>
+
+
+<form action="/lists/<%= @list.id %>/animes/<%= @anime.id %>/delete" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete" role="button" class="btn">
+</form>
+
+<a href="/lists"> Back </a>

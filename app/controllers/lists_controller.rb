@@ -6,13 +6,12 @@ class ListsController < ApplicationController
     get '/lists' do # LINK THATS IN BROWSER
         redirect_if_not_logged_in
         @lists = current_user.lists
-        binding.pry
         erb :'lists/index' # LINK TO ACTUAL FILE
     end
 
     get '/lists/new' do
         redirect_if_not_logged_in
-        erb :'lists/index'
+        erb :'lists/new'
     end
 
     get '/lists/:id' do

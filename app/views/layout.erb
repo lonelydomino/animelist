@@ -1,21 +1,41 @@
+
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
 </head>
 
- <body>
-<% if logged_in? %>
-  <div class="navbar">
-    <a class="active" href="/">Home</a>
-    <a href="/login">Login</a>
-    <a href="/lists">Lists</a>
-    <a href="/logout">Log out</a>
-  </div>
-<% end %>
+<header id="layoutheader">
+<h1 class="h-1">Anime <span class="layoutspan">List</span></h1>
+    <% if logged_in? %>
+        <nav> 
+            <ul>
+                <li><a id="layout-a" href="/"> Home</a></li>
+                
+                <li><a id="layout-a" href="/lists">Lists</a></li>
+                <li><a id="layout-a" href="">About</a></li>
+                <li><a id="layout-a" href="/logout">Log Out</a></li>
+            </ul>
+        </nav>
+    <% end %>
+    <% if !logged_in? %>
+        <nav> 
+            <ul>
+                <li><a id="layout-a" href="/login"> Login</a></li>
+                <li><a id="layout-a" href="/signup"> Sign Up</a></li>
+                <li><a id="layout-a"  href="">About</a></li>
+            </ul>
+        </nav>
+    <% end %>
+</header>
 
+
+
+<body>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

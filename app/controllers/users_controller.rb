@@ -9,7 +9,7 @@ class UserController < ApplicationController
         @user = User.new(params["user"])
         if @user.save
             session["user_id"] = @user.id
-            redirect "/animes"
+            redirect "/lists"
         else
             redirect '/signup'
         end
