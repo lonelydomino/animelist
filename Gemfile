@@ -20,6 +20,7 @@ gem 'sinatra-flash', '~> 0.3.0'
 gem 'uri'
 gem 'openssl'
 gem 'net-http'
+gem 'json'
 
 group :development do
     gem 'sqlite3'

@@ -44,3 +44,9 @@ li {
   color: #F0c330;
   transition: 0.5s;
 }
+#banner-anchor {
+  text-decoration: none;
+}
+#banner-anchor:visited {
+  color: #39ca74;
+}
