@@ -4,6 +4,8 @@ class SearchController < ApplicationController
     end
 
     get '/search' do
+        api_obj = API.new
+        @collection_data = api_obj.get_anime_collection
         erb :'/search/index'
     end
 

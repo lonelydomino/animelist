@@ -21,6 +21,8 @@ gem 'uri'
 gem 'openssl'
 gem 'net-http'
 gem 'json'
+gem 'rest-client'
+gem 'acts_as_favoritor'
 
 group :development do
     gem 'sqlite3'
