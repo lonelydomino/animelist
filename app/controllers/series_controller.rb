@@ -20,11 +20,11 @@ class AnimeController < ApplicationController
 
 
 
-    get '/animes/:listid/lists/:animeid' do
-        @anime = Anime.find(params["animeid"])
-        @list = List.find(params["listid"])
-        erb :'animes/show'
-    end
+    # get '/animes/:listid/lists/:animeid' do
+    #     @anime = Anime.find(params["animeid"])
+    #     @list = List.find(params["listid"])
+    #     erb :'animes/show'
+    # end
 
 
     delete '/animes/:listid/lists/:animeid/delete' do

@@ -136,4 +136,7 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
 
 
 
-
+#results_anchor {
+	text-decoration:  none;
+	color: white;
+}

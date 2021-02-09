@@ -26,7 +26,7 @@ class API
 
      def search(string)
         string.gsub!(/\s/,'%20')
-        response = RestClient.get "https://kitsu.io/api/edge/anime?filter[text]=#{string}"
+        response = RestClient.get "https://kitsu.io/api/edge/anime?filter[text]=#{string}&page[limit]=20"
         json = JSON.parse(response)
         @json_data = json["data"]
         @json_data
