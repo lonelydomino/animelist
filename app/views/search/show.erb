@@ -27,21 +27,18 @@
 				<% @title = d["attributes"]["titles"]["en_us"] %>
 			<% end%>
             <br>
+<br><br>
+
             <h2><%= @title %>  </h2>
 		    <h3><%= @title %>   </h3>
             <p>
 			Rating: <%= @rating %> / 100 <br>
 			Episode count: <%= @episode_count%> 
+			</p> 
 
-
-
-	    	</p> 
-
-            <button>Read more</button>
+            <button><a href="/animes/<%= @id %>">Details </a></button>
 			
         </li>
     <% end %> 
 </ul>
-
-
 

@@ -1,4 +1,7 @@
 class UserController < ApplicationController
+    configure do 
+        set :views, 'app/views'
+    end
 
     get '/signup' do
         erb :'users/signup'

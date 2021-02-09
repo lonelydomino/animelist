@@ -1,5 +1,11 @@
 
-
+#list-data {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /* Layout Styling */
 
@@ -137,4 +143,27 @@ h1 {
     font-size: larger;
   }
 
-  
+  #list-data tr:nth-child(even){
+    background-color: #0f4c75;
+}
+
+#list-data tr:nth-child(odd){
+  background-color: #3282b8;
+}
+
+#list-data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center  ;
+  background-color: #4CAF50;
+  color: rgb(12, 105, 0);
+}
+
+#list-data td, #list_data th {
+border: 1px solid rgb(8, 5, 141);
+padding: 8px;
+}
+
+#list-data tr:hover {
+  background-color: rgb(56, 159, 255);
+}

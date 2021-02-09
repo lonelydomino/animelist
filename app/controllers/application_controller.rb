@@ -5,6 +5,9 @@ class ApplicationController < Sinatra::Base
         enable :sessions
         set :session_secret, ENV["SESSION_SECRET"]
     end
+
+    
+
     get '/' do #intention/location/ and then do
         erb :home
     end

@@ -4,9 +4,9 @@ Specs:
 - [x] Use Sinatra to build the app
 - [x] Use ActiveRecord for storing information in a database
 - [x] Include more than one model class (e.g. User, Post, Category)
-- [?] Include at least one has_many relationship on your User model (e.g. User has_many Posts)
-- [?] Include at least one belongs_to relationship on another model (e.g. Post belongs_to User)
-- [ ] Include user accounts with unique login attribute (username or email)
+- [x] Include at least one has_many relationship on your User model (e.g. User has_many Posts)
+- [x] Include at least one belongs_to relationship on another model (e.g. Post belongs_to User)
+- [x] Include user accounts with unique login attribute (username or email)
 - [X] Ensure that the belongs_to resource has routes for Creating, Reading, Updating and Destroying
 - [ ] Ensure that users can't modify content created by other users
 - [ ] Include user input validations
@@ -20,6 +20,8 @@ Confirm
 - [ ] You don't include changes in a commit that aren't related to the commit message
 
 Things to do:
+- [ ] add flash messages
+- [ ] take limit off anime shown
 - [ ] have characters only be used for current user
 - [ ] Set user id of new characters made(or add character to array of user characters)
 - [ ] set validations as in character class

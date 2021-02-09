@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_05_051553) do
+ActiveRecord::Schema.define(version: 2021_02_09_074208) do
 
   create_table "animelists", force: :cascade do |t|
     t.integer "anime_id"
@@ -23,8 +23,9 @@ ActiveRecord::Schema.define(version: 2021_02_05_051553) do
 
   create_table "animes", force: :cascade do |t|
     t.string "name"
-    t.string "genre"
-    t.string "avatar"
+    t.string "desc"
+    t.string "image"
+    t.integer "api_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -38,9 +39,19 @@ ActiveRecord::Schema.define(version: 2021_02_05_051553) do
     t.index ["owner_id"], name: "index_lists_on_owner_id"
   end
 
+  create_table "profiles", force: :cascade do |t|
+    t.string "name"
+    t.string "bio"
+    t.integer "age"
+    t.string "favorite_series"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "user_name"
     t.string "email"
+    t.integer "profile_id"
     t.string "password_digest"
     t.string "avatar"
     t.datetime "created_at", precision: 6, null: false

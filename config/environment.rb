@@ -6,5 +6,6 @@ require 'dotenv/load'
 
 
 set :database, {adapter: "sqlite3", database: "db/development.db"}
+ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 require_all 'app'

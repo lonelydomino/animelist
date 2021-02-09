@@ -23,6 +23,7 @@ gem 'net-http'
 gem 'json'
 gem 'rest-client'
 gem 'acts_as_favoritor'
+gem 'bootstrap'
 
 group :development do
     gem 'sqlite3'
