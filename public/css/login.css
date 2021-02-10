@@ -1,4 +1,12 @@
+html{
+  background: url("images/tokyolights1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-size: 100% 100%;
 
+}
 :focus {outline:none}
 
 body,

@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2021_02_09_074208) do
     t.string "bio"
     t.integer "age"
     t.string "favorite_series"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -51,7 +52,6 @@ ActiveRecord::Schema.define(version: 2021_02_09_074208) do
   create_table "users", force: :cascade do |t|
     t.string "user_name"
     t.string "email"
-    t.integer "profile_id"
     t.string "password_digest"
     t.string "avatar"
     t.datetime "created_at", precision: 6, null: false

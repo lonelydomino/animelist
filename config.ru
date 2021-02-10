@@ -13,4 +13,5 @@ use ListsController
 use AnimeController
 use SessionsController
 use SearchController
+use ProfileController
 run ApplicationController #can only use run one time, entry point of app

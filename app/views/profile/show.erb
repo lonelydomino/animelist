@@ -1,0 +1,33 @@
+
+  <head>
+    <meta charset="UTF-8">
+    <title>My lists</title>
+    <link rel="stylesheet" type="text/css" href="../css/profile.css">
+  </head>
+<div id="card">
+	<h2><%= current_user.user_name %></h2>
+	<div class="image-crop">
+		<img id="avatar" src="images/avatarPH.png">avatar</img>
+	</div>
+	<div id="bio">
+		<p>Hello, my name is John! Bacon ipsum dolor amet short ribs prosciutto strip steak, pig ham tongue buffalo beef ribs hamburger pork venison. </p>
+	</div>
+	<div id="stats">
+		<div class="col">
+			<p class="stat">108</p>
+			<p class="label">Posts</p>
+		</div>
+				<div class="col">
+			<p class="stat">457</p>
+			<p class="label">Followers</p>
+		</div>
+				<div class="col">
+			<p class="stat">229</p>
+			<p class="label">Following</p>
+		</div>
+	</div>
+	<div id="buttons">
+		<button>Edit</button>
+		<button id="msg">Back</button>
+	</div>
+</div>

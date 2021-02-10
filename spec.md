@@ -25,4 +25,8 @@ Things to do:
 - [ ] have characters only be used for current user
 - [ ] Set user id of new characters made(or add character to array of user characters)
 - [ ] set validations as in character class
+- [ ] fix add to list button
+- [ ] fix anime details layout and information
+- [ ] make back button on anime details page go back to last page and add list index button
+- [ ] make it so you can't add the same anime twice
 
