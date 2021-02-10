@@ -4,8 +4,8 @@ class CreateProfiles < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :bio
       t.integer :age
-      t.string :favorite_series
       t.integer :user_id
+      t.string :favorite_series
       t.timestamps null: false
     end
   end

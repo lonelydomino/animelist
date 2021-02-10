@@ -20,12 +20,24 @@ class ApplicationController < Sinatra::Base
         def current_user
             @current_user = User.find_by(id: session["user_id"])
         end
+        def current_profile
+           @current_profile = current_user.profile 
+        end
 
         def redirect_if_not_logged_in
             if !logged_in?
                 redirect '/login'
             end
         end
+
+        def anime_total
+            total = 0
+            current_user.lists.each do |list|
+                total += list.animes.count
+            end
+            total
+        end
+
         def api 
           
         end

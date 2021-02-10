@@ -21,7 +21,7 @@ Confirm
 
 Things to do:
 - [ ] add flash messages
-- [ ] take limit off anime shown
+- [ ] make pages of anime from search?
 - [ ] have characters only be used for current user
 - [ ] Set user id of new characters made(or add character to array of user characters)
 - [ ] set validations as in character class
@@ -29,4 +29,9 @@ Things to do:
 - [ ] fix anime details layout and information
 - [ ] make back button on anime details page go back to last page and add list index button
 - [ ] make it so you can't add the same anime twice
+- [ ] fix back button after creating a list
+- [ ] fix duplicate lists being created
+- [ ] take away edit button on profile if not the user
+- [ ] bold text labels in profile
+- [ ] find out why text area isnt showing value/placeholder
 
