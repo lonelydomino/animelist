@@ -22,8 +22,6 @@ Confirm
 Things to do:
 - [ ] add flash messages
 - [ ] make pages of anime from search?
-- [ ] have characters only be used for current user
-- [ ] Set user id of new characters made(or add character to array of user characters)
 - [ ] set validations as in character class
 - [ ] fix add to list button
 - [ ] fix anime details layout and information
@@ -37,6 +35,8 @@ Things to do:
 - [ ] add back button to edit page
 - [ ] no search results text on search page
 - [ ] double check validations for edits
+- [ ] initialize lists with no description text?
+- [ ] implemente delete anime from lists
 
 - Profile page(show) mostly complete. Maybe make it auto adjust profile card width to account for larger bios. edit button takes you back up and makes you click edit a 2nd time
 

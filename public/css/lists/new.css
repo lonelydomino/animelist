@@ -63,3 +63,9 @@ input[type=text], select {
 	font-size: 15px;
 
   }
+  #list-list {
+    width: 800px;
+    text-align: center;
+    margin: 8px auto;
+    
+}

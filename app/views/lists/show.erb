@@ -8,11 +8,12 @@
   <% if !@list.animes.empty? %>
   <table id="list-data">
     <tr>
-      <th>Name</th>
+      <th id="th-name">Name</th>
     </tr>
   <% @list.animes.each do |c| %>
     <tr>
-      <td><a href="/animes/<%=c.api_id%>"><%= c.name %></a></td>
+    <%= binding.pry%>
+      <td><a href="/animes/<%= c.api_id%>"><%= c.name %></a></td>
     </tr>
   <% end %>
   </table>
@@ -21,14 +22,10 @@
     <p id="p1"> No anime data! </p>
 <% end %>
 
+
 <br><br><br><br>    
       
-
-
-
-<div id="container">
-
-    
+<div id="container1">
   <br>
 <% if !@list.animes.empty?%>
   <div class="button" id="button-3">
@@ -36,9 +33,7 @@
     <a href="/lists/<%= @list.id %>/edit">Edit</a>
   </div>
   <% end %>
-
   <br>
-
   <div class="button" id="button-3">
     <div id="circle"></div>
         <form action="/lists/<%= @list.id %>/delete" method="post">
@@ -46,18 +41,16 @@
              <input type="submit" value="Delete list" role="button" class="deletebutton">
         </form>
   </div>
-
   <br>
-
+<a href="/lists">
    <div class="button" id="button-3">
     <div id="circle"></div>
         <form>
- <input type="button" value="Go back!" onclick="history.back()">
+ <input type="button" value="Go back!">
 </form>
   </div>
-
+  </a>
   <br>
-
   </div>
   
 

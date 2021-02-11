@@ -16,16 +16,36 @@ body {
     width: 800px;
     text-align: center;
     margin: 8px auto;
-} 
+    
+}
+ 
   
 
 
 /* Styles Table */
 
 #list-data {
+  border-radius: 16px 16px 16px 16px;
 width: 100%;
 border-collapse: collapse;
-border: 1px solid black;
+}
+#td-header {
+  border-top-left-radius: 15px;
+}
+#list-data tr:first-child td:first-child{
+  border-top-left-radius: 15px;
+}
+
+#list-data tr:first-child td:last-child {
+  border-top-right-radius: 15px;
+}
+
+#list-data tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+#list-data tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
 }
 
 #list-data tr:nth-child(even){
@@ -45,8 +65,13 @@ border: 1px solid black;
 }
 
 #list-data td, #list_data th {
-border: 1px solid rgb(8, 5, 141);
 padding: 8px;
+}
+#th-1 {
+  border-top-left-radius: 15px;
+}
+#th-2 {
+  border-top-right-radius: 15px;
 }
 
 #list-data tr:hover {
@@ -92,9 +117,6 @@ ul.bot_nav {
     color: white;
     text-align: center;
 }
-
-
-
 td {
     color: white;
 }
@@ -120,10 +142,10 @@ td {
     background-color: rgb(27, 71, 45);
     margin: 20px 20px 20px 20px;
     color: #BFC0C0;
-    text-transform: uppercase;
+  border-radius: 222px;
     text-decoration: none;
     font-size: 16px;
-    font-family: Helvetica, sans-serif;
+ 
     padding: 15px 32px;
     letter-spacing: 1.5px;
     align-items: center;
@@ -131,16 +153,21 @@ td {
     overflow: hidden;
   }
   
-  #button-anchor {
-    color: #BFC0C0;
+  #button-text {
+    color: #ffffff;
     font-size: 16px;
     text-decoration: none;
     letter-spacing: 1px;
     text-align: center;
+    z-index: 100; 
+    font-family: Verdana;
   }
-  
-  
-  /* Third Button */
+
+  #button-anchor {
+    font-family: Verdana;
+    text-decoration: none;
+  }
+
   
   #button-3 {
     position: relative;
@@ -177,7 +204,7 @@ td {
     top: 20px;
     left: 70px;
   }
-  
+
   
   #button-3:hover #circle {
     width: 200%;

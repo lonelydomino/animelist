@@ -14,9 +14,9 @@
       <p id="lists-pt">
         <% if !current_user.lists.empty? %>
           <table id="list-data">
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
+          <tr id="td-header">
+            <th id="th-1">Name</th>
+            <th id="th-2">Description</th>
           </tr>
           <% @lists.each do |c| %>
               <tr>
@@ -29,17 +29,17 @@
         <% else %>
           <p id="p1"><br><br><br><br> No list data!<br> </p>
         <% end %>
-
       </p>
-      
     </section>
     <br><br><br><br>
 
 <div id="container">
+<a id="button-anchor" href="/lists/new">
     <div class="button1" id="button-3">
       <div id="circle"></div>
-      <a id="button-anchor" href="/lists/new">Create list!</a>
+     <p id="button-text"> Create List</p>
     </div>
+    </a>
 </div>
 
 
