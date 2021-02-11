@@ -27,6 +27,7 @@ function validateForm() {
 }
 </script>
 </head>
+<br><br><br><br>
 <div class="formstyle">
     <form name="profile_edit" action="/profile/<%= current_profile.id %>" method="post" onsubmit="return validateForm()">
     <input type="hidden" name="_method" value="patch">
@@ -34,7 +35,7 @@ function validateForm() {
     <input type="text" name="profile[name]" id="name" value="<%= current_profile.name %>">
 
     <label for="bio">Bio: </label>
-    <textarea id="textarea" rows="8" cols="45" name="profile[bio]" id="bio" value="<%= current_profile.bio %>"></textarea>
+    <textarea id="textarea" rows="8" cols="45" name="profile[bio]" id="bio"><%= current_profile.bio %></textarea>
 
     <label for="age">Age: </label>
     <input type="text" name="profile[age]" id="integer" value="<%= current_profile.age %>">

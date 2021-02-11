@@ -11,7 +11,7 @@ body {
 }
 
 html,body {
-	background: url("../images/tokyolights2.png") no-repeat center center fixed;
+	background: url("/images/tokyolights2.png") no-repeat center center fixed;
 	font-family: tahoma, sans-serif;
 	color: #E6EBEE;
     background-size: auto; 
@@ -60,14 +60,14 @@ h2 {
 	margin-left: -5px;
 }
 
-#bio {
+#attributes {
 	display: block;
 	margin: 30px auto;
 	width: 280px;
 	height: auto;
 }
 
-#bio p {
+#attributes p {
 	color: #E6EBEE;
 	font-weight: lighter;
 	font-size: 15px;
@@ -114,7 +114,7 @@ button {
 	position: relative;
 	padding: 10px 0;
 	width: 130px;
-	margin: 30px 0;
+	margin: 30px 0px 30px 70px;
 	border-radius: 25px;
 	border: none;
 	font-size: 20px;
@@ -137,4 +137,13 @@ button:hover {
 #msg{
 	background-color: #6b7afd;
 	color: #ffffff;
+	
+}
+#attribute_header {
+	font-family: "copperplate";
+	font-size: 30px;
+	margin-left: 0;
+	
+	padding: 10px;
+ 
 }

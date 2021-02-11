@@ -33,5 +33,11 @@ Things to do:
 - [ ] fix duplicate lists being created
 - [ ] take away edit button on profile if not the user
 - [ ] bold text labels in profile
-- [ ] find out why text area isnt showing value/placeholder
+- [x] find out why text area isnt showing value/placeholder
+- [ ] add back button to edit page
+- [ ] no search results text on search page
+
+- Profile page(show) mostly complete. Maybe make it auto adjust profile card width to account for larger bios
+
+
 

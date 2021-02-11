@@ -1,37 +1,36 @@
-
   <head>
     <meta charset="UTF-8">
     <title>My lists</title>
-    <link rel="stylesheet" type="text/css" href="../css/profile.css">
+    <link rel="stylesheet" type="text/css" href="../css/profile/show.css">
   </head>
+
 <div id="card">
 	<h2><%= current_user.user_name %></h2>
 	<div class="image-crop">
 		<img id="avatar" src="/images/avatarPH.png" width="22" height="600">avatar</img>
 	</div>
-	
-    <div id="bio">
-		<p>Name: <%= current_profile.name %> </p>
+    <div id="attributes">
+		<p><h3 id="attribute_header">Name</h3> <%= current_profile.name %> </p>
 	</div>
-    <div id="bio">
-		<p>Bio: <%= current_profile.bio %> </p>
+    <div id="attributes">
+		<p><h3 id="attribute_header">Bio</h3> <%= current_profile.bio %> </p>
 	</div>
     
-    <div id="bio">
-		<p>Favorite Series: <%= current_profile.favorite_series %> </p>
+    <div id="attributes">
+		<p><h3 id="attribute_header">Favorite Series</h3> <%= current_profile.favorite_series %> </p>
 	</div>
 	<div id="stats">
 		<div class="col">
 			<p class="stat"><%= current_user.lists.count %></p>
 			<p class="label">Lists</p>
 		</div>
-				<div class="col">   
-			<p class="stat"><%= anime_total%></p>
+			<div class="col">   
+			<p class="stat"><%= anime_total %></p>
 			<p class="label">Animes favorited</p>
 		</div>
-				<div class="col">
-			<p class="stat"><%= current_profile.age %></p>
-			<p class="label">Age</p>
+			<div class="col">
+			<p class="stat">0</p>
+			<p class="label">Likes</p>
 		</div>
 	</div>
 	<div id="buttons">
