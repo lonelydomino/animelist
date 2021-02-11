@@ -24,6 +24,7 @@ input[type=text], select {
     box-sizing: border-box;
     background-color: rgb(54, 65, 128);
     color: white;
+    text-align: center ;
   }
   
   input[type=submit] {
@@ -45,4 +46,20 @@ input[type=text], select {
   border-radius: 50px;
   margin-left: 740px;
   margin-right: 180px;
+  }
+  input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    
+    border: none;
+    border-radius: 114px;
+    cursor: pointer;
+  }
+  label {
+    font-family: "verdana";
+	font-size: 15px;
+
   }

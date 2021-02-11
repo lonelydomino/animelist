@@ -24,6 +24,7 @@ input[type=text], select,#textarea  {
     box-sizing: border-box;
     background-color: rgb(54, 65, 128);
     color: white;
+    text-align: center; 
   }
   
   input[type=submit] {
@@ -35,6 +36,7 @@ input[type=text], select,#textarea  {
     border: none;
     border-radius: 114px;
     cursor: pointer;
+    
   }
   
   input[type=submit]:hover {
@@ -45,4 +47,23 @@ input[type=text], select,#textarea  {
   border-radius: 50px;
   margin-left: 740px;
   margin-right: 180px;
+  }
+  #textarea {
+    resize: none;
+  }
+  input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    
+    border: none;
+    border-radius: 114px;
+    cursor: pointer;
+  }
+  label {
+    font-family: "verdana";
+	font-size: 15px;
+
   }

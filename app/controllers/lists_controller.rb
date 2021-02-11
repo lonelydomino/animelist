@@ -28,9 +28,14 @@ class ListsController < ApplicationController
 
     post '/lists' do
         @list = List.new(params)
+        current_user.lists.each do |list|
+            if @list.name == list.name
+            #flash message here?
+            redirect '/lists/new'
+            end
+        end
         if @list.save
             current_user.lists << @list
-            #session[:alert] = "Character created!"
             redirect "/lists/#{@list.id}"
         else
             redirect '/lists/new'

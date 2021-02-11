@@ -4,22 +4,17 @@
     <link rel="stylesheet" type="text/css" href="../css/lists/new.css">
   </head>
 
-
 <h1> Create a list! </h1>
 
-
 <div class="formstyle">
-
-<form action="/lists" method="post" >
-
-  <label for="name">Name: </label>
-  <input type="text" name="name" id="name">
-
-  <label for="name">Description: </label>
-  <input type="text" name="desc" id="desc">
-
-
-  <input type="submit" value="Submit">
-</form>
-
+  <form action="/lists" method="post" >
+    <label for="name">Name </label>
+    <input type="text" name="name" id="name">
+    <label for="name">Description </label>
+    <input type="text" name="desc" id="desc">
+    <input type="submit" value="Submit">
+  </form>
+  <form>
+    <input type="button" value="Go back!" onclick="history.back()">
+  </form>
 </div>
