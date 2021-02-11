@@ -16,8 +16,12 @@ class ListsController < ApplicationController
 
     get '/lists/:id' do
         redirect_if_not_logged_in
-        @list = List.find(params["id"])
-        erb :'lists/show' 
+        if List.exists?(params[:id])
+            @list = List.find(params["id"])#How to account for this failing if user types ID into address bar?
+            erb :'lists/show'
+        else
+            redirect 'lists' 
+        end
     end
 
     get '/lists/:id/edit' do

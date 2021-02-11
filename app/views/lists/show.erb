@@ -12,7 +12,6 @@
     </tr>
   <% @list.animes.each do |c| %>
     <tr>
-    <%= binding.pry%>
       <td><a href="/animes/<%= c.api_id%>"><%= c.name %></a></td>
     </tr>
   <% end %>

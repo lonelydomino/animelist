@@ -7,7 +7,7 @@ Specs:
 - [x] Include at least one has_many relationship on your User model (e.g. User has_many Posts)
 - [x] Include at least one belongs_to relationship on another model (e.g. Post belongs_to User)
 - [x] Include user accounts with unique login attribute (username or email)
-- [X] Ensure that the belongs_to resource has routes for Creating, Reading, Updating and Destroying
+- [x] Ensure that the belongs_to resource has routes for Creating, Reading, Updating and Destroying
 - [?] Ensure that users can't modify content created by other users
 - [?] Include user input validations
 - [ ] BONUS - not required - Display validation failures to user with error message (example form URL e.g. /posts/new)
@@ -37,6 +37,8 @@ Things to do:
 - [ ] double check validations for edits
 - [ ] initialize lists with no description text?
 - [ ] implemente delete anime from lists
+- [ ]@list = List.find(params["id"])#How to account for this failing if user types ID into address bar?
+- [ ] format the anime detail page better so image displays on the left, buttons at bottom, title at top and description at right
 
 - Profile page(show) mostly complete. Maybe make it auto adjust profile card width to account for larger bios. edit button takes you back up and makes you click edit a 2nd time
 
