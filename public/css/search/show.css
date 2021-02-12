@@ -17,22 +17,26 @@ body {
 	background: #262a2b;
 }
 .tilesWrap {
-	padding: 0;
+	padding: 100;
 	margin: 50px auto;
 	list-style: none;
-	text-align: center;
+	max-width: 90%;
+    float: right;
+    margin-top: 8px;
+	margin-right: 100px	;
 }
 .tilesWrap li {
 	display: inline-block;
 	width: 20%;
-	min-width: 200px;
-	max-width: 230px;
+	min-width: 270px;
+	max-width: 270px;
 	padding: 80px 20px 40px;
 	position: relative;
 	vertical-align: top;
 	margin: 10px;
 	font-family: 'helvetica', san-serif;
-	min-height: 25vh;
+	min-height: 65vh;
+	max-height: 65vh;
 	background: #262a2b;
 	border: 1px solid #252727;
 	text-align: left;
@@ -148,4 +152,14 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
 #results_anchor {
 	text-decoration:  none;
 	color: white;
+}
+#no-results {
+	position: none;
+    text-align: center;
+    margin: 0 0 0 px;
+}
+div { text-align: justify;}
+
+.a-img {
+	max-width: 100%;
 }

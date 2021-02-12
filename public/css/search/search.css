@@ -1,16 +1,17 @@
-html{
-    background: url(https://images.pexels.com/photos/590478/pexels-photo-590478.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
+html,body {
+	background: url("/images/japannight.png") no-repeat center center fixed;
+	font-family: tahoma, sans-serif;
+	color: #E6EBEE;
+    background-size: auto; 
     background-size: 100% 100%;
+    
   
-  }
+}
 
 
   *
   {
+      position: sticky;
       outline: none;
   }
   
@@ -48,16 +49,16 @@ html{
   
   #cover
   {
-      position: absolute;
-      top: 50%;
+      position: fixed;
+      top: 30%;
       left: 0;
       right: 0;
       width: 950px;
       padding: 35px;
-      margin: -83px auto 0 auto;
+      margin: 83px auto 0 auto;
       background-color: #253b79;
       border-radius: 20px;
-      box-shadow: 0 10px 40px #4340ff, 0 0 0 20px #16004beb;
+      box-shadow: 0 10px 40px #004949, 0 0 0 20px #16004beb;
       transform: scale(0.6);
   }
   
@@ -190,6 +191,4 @@ html{
     box-shadow: 0 10px 20px -5px rgba(255, 117, 117, 0.86);
     z-index: 125;
   }
-
-
 

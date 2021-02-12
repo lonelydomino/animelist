@@ -38,7 +38,7 @@ function validateForm() {
     <textarea id="textarea" rows="8" cols="45" name="profile[bio]" id="bio"><%= current_profile.bio %></textarea>
 
     <label for="age">Age </label>
-    <input type="text" name="profile[age]" id="integer" value="<%= current_profile.age %>">
+    <input type="text" name="profile[age]" id="integer" value="<%= current_profile.try(:age) || "No age set." %>">
 
     <label for="class">Favorite Series </label>
     <input type="text" name="profile[favorite_series]" id="favorite_series" value="<%= current_profile.favorite_series %>">

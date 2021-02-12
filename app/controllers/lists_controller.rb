@@ -34,8 +34,8 @@ class ListsController < ApplicationController
         @list = List.new(params)
         current_user.lists.each do |list|
             if @list.name == list.name
-            #flash message here?
-            redirect '/lists/new'
+                flash[:error] = "List name already exists!"
+                redirect '/lists/new'
             end
         end
         if @list.save

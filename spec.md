@@ -20,9 +20,8 @@ Confirm
 - [X] You don't include changes in a commit that aren't related to the commit message
 
 Things to do:
-- [ ] add flash messages
+- [x] add flash messages
 - [ ] make pages of anime from search?
-- [ ] set validations as in character class
 - [ ] fix add to list button
 - [ ] fix anime details layout and information
 - [ ] make back button on anime details page go back to last page and add list index button
@@ -39,6 +38,8 @@ Things to do:
 - [ ] implemente delete anime from lists
 - [ ]@list = List.find(params["id"])#How to account for this failing if user types ID into address bar?
 - [ ] format the anime detail page better so image displays on the left, buttons at bottom, title at top and description at right
+- [ ] fix crashing from a user typing in an anime id that doesnt exist in address bar
+- [ ] are we supposed to account for user typing random gibberish into address bar?
 
 - Profile page(show) mostly complete. Maybe make it auto adjust profile card width to account for larger bios. edit button takes you back up and makes you click edit a 2nd time
 

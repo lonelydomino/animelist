@@ -2,8 +2,13 @@
     <meta charset="UTF-8">
     <title>My anime lists</title>
     <link rel="stylesheet" type="text/css" href="../css/lists/new.css">
-  </head>
+</head>
+<% if flash[:error] %>
 
+
+  <p style="z-index: 200;"><%= flash[:error] %></p>
+  
+<% end %>
 <h1> Create a list! </h1>
 
 <div class="formstyle">
