@@ -28,11 +28,7 @@ body {
     cursor: pointer;
   }
   html{
-    background: url("../images/tokyolights2.png") no-repeat center center fixed; 
-    background-position: right top;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("../images/raintaxi.png") no-repeat center center fixed; 
     background-size: auto; 
     background-size: 100% 100%;
 
