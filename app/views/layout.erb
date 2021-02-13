@@ -7,11 +7,12 @@
 </head>
 
 <header id="layoutheader">
+<a id="banner-anchor" href="/"><img id="doge" src="/images/doge2.jpeg" alt="doge2.png" width="5%"></a> 
 <h1 class="h-1"><a id="banner-anchor" href="/">Anime <span class="layoutspan">List</span></a></h1>
     <% if logged_in? %>
         <nav> 
             <ul id="layout-ul">
-                <li><a id="layout-a" href="/search"> Search</a></li>
+                <li>  <a id="layout-a" href="/search"> Search</a></li>
                 <li><a id="layout-a" href="/"> Home</a></li>
                 <li><a id="layout-a" href="/lists">Lists</a></li>
                 <li><a id="layout-a" href="/profile/<%= current_profile.id %>">Profile</a></li>

@@ -10,7 +10,7 @@ Specs:
 - [x] Ensure that the belongs_to resource has routes for Creating, Reading, Updating and Destroying
 - [?] Ensure that users can't modify content created by other users
 - [?] Include user input validations
-- [ ] BONUS - not required - Display validation failures to user with error message (example form URL e.g. /posts/new)
+- [x] BONUS - not required - Display validation failures to user with error message (example form URL e.g. /posts/new)
 - [ ] Your README.md includes a short description, install instructions, a contributors guide and a link to the license for your code
 
 Confirm
@@ -43,5 +43,5 @@ Things to do:
 
 - Profile page(show) mostly complete. Maybe make it auto adjust profile card width to account for larger bios. edit button takes you back up and makes you click edit a 2nd time
 
-
+- [ ] whats the best way to deal with empty forms slots?
 

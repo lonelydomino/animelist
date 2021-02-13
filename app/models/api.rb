@@ -13,7 +13,7 @@ class API
         hash["name"] = data["attributes"]["titles"]["en_jp"]
         hash["desc"] = data["attributes"]["description"]
         hash["title"] = data["attributes"]["titles"]["en"]
-        hash["image"] = data["attributes"]["posterImage"]["small"]
+        hash["image"] = data["attributes"]["posterImage"]["large"]
         hash
      end
 

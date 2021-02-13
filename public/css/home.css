@@ -33,3 +33,46 @@ body {
     background-size: 100% 100%;
 
 }
+
+
+/* Styles the bottom bar */
+ul.bot_nav {
+  position: fixed;
+  bottom: 0px;
+  width:100%;
+  margin:0 auto;
+  padding:0;
+  list-style:none;
+  background-color:#010102;
+  text-align:center;
+  font-family: sans-serif; 
+}
+.bot_nav li { 
+  display:inline-block;
+  width:33%;
+  margin:0;
+  padding:0;
+}
+.bot_nav p {
+  text-align:center;
+  padding:12px 0 13px 0;
+  margin:0;
+
+  display:block;
+}
+.bot_nav li:hover { 
+  background:#3282b8;
+  
+}
+
+#p1 {
+  font-size: larger;
+  color: white;
+  text-align: center;
+}
+td {
+  color: white;
+}
+#l {
+    color: white;
+}

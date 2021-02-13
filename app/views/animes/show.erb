@@ -4,34 +4,35 @@
     <link rel="stylesheet" type="text/css" href="../css/animes/show.css">
 </head>
 
-<h1>Name: <%= @details["title"] %> </h1>
 
+<div class="row">
+  <div class="column" id="c1">
 
-<table>
-<ul>
-    <li><img src="<%= @details["image"] %>" alt="<%= @details["name"] %>_image"></li>
-    <li>Description: <%= @details["desc"] %></li>
-</ul>
-
-</table>
-
-<h4>Add to list:
-<div class="dropdown">
-<button class="dropbtn">Lists </button>
-<div class="dropdown-content">
-<% current_user.lists.each do |list| %>
-    <a href="/animes/<%= list.id %>/add/<%=@details["id"] %>"><%= list.name %></a>
-<% end %>
-
-
+    <p><img src="<%= @details["image"] %>" alt="<%= @details["name"] %>_image"></p>
+  </div>
+  
+  <div class="column" id="c2">
+        <h1><%= @details["title"] %> </h1>
+        <p>
+            
+             <h4 id="title-h"><span id="title-h1-span">  <b> Description </b></span> <br><%= @details["desc"] %>
+          
+            <h4>Add to list:
+                <div class="dropdown">
+                    <button class="dropbtn">Lists </button>
+                    <div class="dropdown-content">
+                        <% current_user.lists.each do |list| %>
+                            <a href="/animes/<%= list.id %>/add/<%=@details["id"] %>"><%= list.name %></a>
+                        <% end %>
+                    </div>
+                </div> 
+            </h4>
+        </p>
+        <form>
+          <input type="button" value="Go back!" onclick="history.back()">
+        </form>
+  </div>
 </div>
-</div> </h4>
 
 <br><br>
 
-
-
-
-<form>
- <input type="button" value="Go back!" onclick="history.back()">
-</form>

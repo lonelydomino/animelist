@@ -1,5 +1,10 @@
 
-
+html{
+  background-color: #1b262c;
+  background: url("/images/tokyolights1.png") no-repeat center center fixed;
+  background-size: auto; 
+  background-size: 100% 100%;
+}
 
 /* Layout Styling */
 
@@ -36,7 +41,7 @@
 a {
   color: #BFC0C0;
   text-decoration: none;
-  letter-spacing: 1px;
+  
 }
 
 
@@ -96,9 +101,6 @@ input[type=submit] {
 
 
 @media screen and (min-width:1000px) {
-  h1 {
-    font-size: 2.2em;
-  }
   #container {
     width: 50%;
   }
@@ -109,7 +111,7 @@ input[type=submit] {
 
 
 body {
-    background-color: #1b262c;
+   
     font-family: verdana;
     text-align: center;
   }
@@ -135,6 +137,11 @@ h1 {
   #p1 {
     color: white;
     font-size: larger;
+    background-color: black;
+    padding: 20px;
+    margin-left: 30em;
+    margin-right: 30em;
+    border-radius: 10px;
   }
 
 #list-data {
@@ -205,34 +212,6 @@ padding: 8px;
 #table-anchor:visited {
     color: #ffffff;
 }
-/* Styles the bottom bar */
-ul.bot_nav {
-    width:100%;
-    margin:0 auto;
-    padding:0;
-    list-style:none;
-    background-color:#010102;
-    text-align:center;
-    font-family: sans-serif; 
-}
-.bot_nav li { 
-    display:inline-block;
-    width:33%;
-    margin:0;
-    padding:0;
-}
-.bot_nav p {
-    text-align:center;
-    padding:12px 0 13px 0;
-    margin:0;
-
-    display:block;
-}
-.bot_nav li:hover { 
-    background:#3282b8;
-    
-}
-
 #p1 {
     font-size: larger;
     color: white;

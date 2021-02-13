@@ -1,4 +1,8 @@
-
+html{
+  background: url("/images/tokyolights1.png") no-repeat center center fixed; 
+  background-size: auto; 
+  background-size: 100% 100%;
+}
 
 body {
     background-color: #1b262c;
@@ -6,12 +10,18 @@ body {
     text-align: center;
     
   }
-h1 {
-  margin-top: 5em;
+#header-1 {
+  background-color: #000000;
+  border-radius: 12px;
+  position:fixed;
+  top: 100px;
+  border: solid white 1px;
   margin-bottom: 0;
-  padding-top: 50px;
-    color: white;
-    padding-bottom: 50px;
+  padding-top: 15px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 
@@ -48,11 +58,11 @@ input[type=text], select {
   .formstyle {
     background-color: #8cb4ff;
     padding: 20px;
-    width: 20%;
+    width: 23%;
     border-radius: 50px;
     position: fixed;
     left: 39%;
-    top: 400px;
+    top: 300px;
   }
 
   #header-1 {

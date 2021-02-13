@@ -11,7 +11,7 @@ body {
 .dropbtn {
     background-color: black;
     color: white;
-    padding: 16px;
+    padding: 10px 85px 10px 82px;
     font-size: 16px;
     border: none;
 }
@@ -39,3 +39,21 @@ body {
 .dropdown-content a:hover {background-color: white;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: grey;}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 40%;
+    padding: 50px 0px 0px 0px;
+  }
+  #c2 {
+      padding: 120px 20px 20px 20px;
+  }
+  #title-h {
+      text-align: left;
+      padding: 101px 10px 101px 10px;
+      
+  }
+  #title-h1-span {
+    color: grey;
+  }
