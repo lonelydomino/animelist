@@ -37,6 +37,10 @@ class ListsController < ApplicationController
                 flash[:error] = "List name already exists!"
                 redirect '/lists/new'
             end
+            if @list.name == ""
+                flash[:error] = "List name cannot be blank!"
+                redirect '/lists/new'
+            end
         end
         if @list.save
             current_user.lists << @list

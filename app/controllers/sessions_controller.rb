@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
             session[:user_id] = user.id
             redirect '/lists'
         else
-            #flash[:error] = "Invalid login credentials!"
+            flash[:error] = "Invalid login credentials!"
             redirect 'login'
         end
     end

@@ -16,6 +16,7 @@ class UserController < ApplicationController
             session["user_id"] = @user.id
             redirect "/lists"
         else
+            flash[:error] = "Registration failed! Please try again!"
             redirect '/signup'
         end
     end

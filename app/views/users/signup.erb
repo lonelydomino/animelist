@@ -6,7 +6,12 @@
   </head>
 
   <br><br><br>
-
+<% if flash[:error] %>
+  <div id="alert">
+    <span class="closebtn">&times;</span>   
+    <p><%= flash[:error] %></p>
+  </div>
+<% end %>
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
@@ -16,12 +21,25 @@
 
   <form method="post" action="/signup"><hr><hr>
     <label id="icon" for="user_name"><i class="icon-envelope "></i></label>
-    <input type="email" name="user[email]" id="name" placeholder="Email" required/>
+    <input type="email" name="user[email]" placeholder="Email" required/>
     <label id="icon" for="name"><i class="icon-user"></i></label>
-    <input type="text" name="user[user_name]" id="name" placeholder="User Name" required/>
+    <input type="text" name="user[user_name]" placeholder="User Name" required/>
     <label id="icon" for="name"><i class="icon-shield"></i></label>
-    <input type="password" name="user[password]" id="name" placeholder="Password" required/>
+    <input type="password" name="user[password]" placeholder="Password" required/>
     <input type="submit" class="button" value="Register"> 
   </form>
 </div>
 </html>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>

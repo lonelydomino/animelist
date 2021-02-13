@@ -1,18 +1,22 @@
+
+
 body {
     background-color: #1b262c;
     font-family: verdana;
     text-align: center;
+    
   }
 h1 {
-    padding-top: 148px;
+  margin-top: 5em;
+  margin-bottom: 0;
+  padding-top: 50px;
     color: white;
     padding-bottom: 50px;
 
 }
-.formstyle{
-    background-color: #8cb4ff;
-    padding: 20px;
 
+#content {
+  position: absolute;
 }
 input[type=text], select {
     width: 100%;
@@ -42,10 +46,18 @@ input[type=text], select {
     background-color: #45a049;
   }
   .formstyle {
-  width: 20%;
-  border-radius: 50px;
-  margin-left: 740px;
-  margin-right: 180px;
+    background-color: #8cb4ff;
+    padding: 20px;
+    width: 20%;
+    border-radius: 50px;
+    position: fixed;
+    left: 39%;
+    top: 400px;
+  }
+
+  #header-1 {
+    position: fixed;
+    left: 44%;
   }
   input[type=button] {
     width: 100%;
@@ -68,4 +80,33 @@ input[type=text], select {
     text-align: center;
     margin: 8px auto;
     
+}
+#alert {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  text-align: center;
+  z-index: 200;
+  width: 100%;
+  position:fixed;  
+  top:112px;
+}
+.closebtn {
+  margin-left: 0px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: fixed;
+  margin-left: 111px;
+  margin-top: 15px;
+}
+
+.closebtn:hover {
+  color: black;
 }

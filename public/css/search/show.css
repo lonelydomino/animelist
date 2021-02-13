@@ -22,7 +22,7 @@ body {
 	list-style: none;
 	max-width: 90%;
     float: right;
-    margin-top: 8px;
+
 	margin-right: 100px	;
 }
 .tilesWrap li {
@@ -158,7 +158,7 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
     text-align: center;
     margin: 0 0 0 px;
 }
-div { text-align: justify;}
+div { }
 
 .a-img {
 	max-width: 100%;

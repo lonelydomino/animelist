@@ -3,13 +3,17 @@
     <title>My anime lists</title>
     <link rel="stylesheet" type="text/css" href="../css/lists/new.css">
 </head>
+<body>
+
 <% if flash[:error] %>
-
-
-  <p style="z-index: 200;"><%= flash[:error] %></p>
-  
+  <div id="alert">
+    <span class="closebtn">&times;</span>   
+    <p><%= flash[:error] %></p>
+  </div>
 <% end %>
-<h1> Create a list! </h1>
+
+<div id="content">
+<h1 id="header-1"> Create a list! </h1>
 
 <div class="formstyle">
   <form action="/lists" method="post" >
@@ -19,7 +23,26 @@
     <input type="text" name="desc" id="desc">
     <input type="submit" value="Submit">
   </form>
-  <form>
-    <input type="button" value="Go back!" onclick="history.back()">
-  </form>
+  <a href="/lists">
+    <form>
+      <input type="button" value="Go back!">
+    </form>
+  </a>
 </div>
+
+</div>
+
+</body>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
