@@ -4,16 +4,25 @@
     <link rel="stylesheet" type="text/css" href="../css/lists/show.css">
 </head>
 
+<% if flash[:error] %>
+  <div id="alert">
+    <span class="closebtn">&times;</span>   
+    <p><%= flash[:error] %></p>
+  </div>
+<% end %>
+
 <div id="main-container">
 <h1><%= @list.name%></h1>
   <% if !@list.animes.empty? %>
   <table id="list-data">
     <tr>
       <th id="th-name">Name</th>
+      <th id="delete-col"></th>
     </tr>
   <% @list.animes.each do |c| %>
     <tr>
-      <td><a href="/animes/<%= c.api_id%>"><%= c.name %></a></td>
+      <td><a class="arow" href="/animes/<%= c.api_id%>"><%= c.name %></a></td>
+      <td><a class="delete-button" href="/lists/<%= @list.id %>/animes/<%= c.id%>/delete">x</a></td>
     </tr>
   <% end %>
   </table>
@@ -44,12 +53,12 @@
   <br>
 <a href="/lists">
    <div class="button" id="button-3">
-    <div id="circle"></div>
+      <div id="circle"></div>
         <form>
- <input type="button" value="Go back!">
-</form>
-  </div>
-  </a>
+          <input type="button" value="Go back!">
+        </form>
+    </div>
+</a>
   <br>
   </div>
   </div>

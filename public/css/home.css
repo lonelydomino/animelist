@@ -76,3 +76,9 @@ td {
 #l {
     color: white;
 }
+
+#logo {
+  position: fixed;
+  top:50%;
+  left:37%;
+}

@@ -14,28 +14,17 @@ Specs:
 - [ ] Your README.md includes a short description, install instructions, a contributors guide and a link to the license for your code
 
 Confirm
-- [ ] You have a large number of small Git commits
+- [X] You have a large number of small Git commits
 - [X] Your commit messages are meaningful
 - [X] You made the changes in a commit that relate to the commit message
 - [X] You don't include changes in a commit that aren't related to the commit message
 
 Things to do:
-- [x] add flash messages
 - [ ] make pages of anime from search?
-- [ ] fix add to list button
-- [ ] fix anime details layout and information
+- [ ] add more anime details?
 - [ ] make back button on anime details page go back to last page and add list index button
-- [ ] make it so you can't add the same anime twice
 - [ ] fix back button after creating a list
-- [ ] fix duplicate lists being created
 - [ ] take away edit button on profile if not the user
-- [ ] bold text labels in profile
-- [x] find out why text area isnt showing value/placeholder
-- [ ] add back button to edit page
-- [ ] no search results text on search page
-- [ ] double check validations for edits
-- [ ] initialize lists with no description text?
-- [ ] implemente delete anime from lists
 - [ ]@list = List.find(params["id"])#How to account for this failing if user types ID into address bar?
 - [ ] format the anime detail page better so image displays on the left, buttons at bottom, title at top and description at right
 - [ ] fix crashing from a user typing in an anime id that doesnt exist in address bar
@@ -44,4 +33,7 @@ Things to do:
 - Profile page(show) mostly complete. Maybe make it auto adjust profile card width to account for larger bios. edit button takes you back up and makes you click edit a 2nd time
 
 - [ ] whats the best way to deal with empty forms slots?
-
+- [ ] hide API key?
+- [ ] SELECTIOn border after clicking on back buttons?
+- [ ]  <input type="button" value="Go back!" onclick="history.back()"> go back to any page EXCEPT  creation page?
+- [ ] animes such as mui d and batman beyond titles still not shwoing

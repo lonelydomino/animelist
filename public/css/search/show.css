@@ -154,11 +154,19 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
 	color: white;
 }
 #no-results {
-	position: none;
+	position: fixed;
+	top: 42%;
     text-align: center;
-    margin: 0 0 0 px;
+	left: 42%;
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	background-color: rgb(0, 0, 0);
+	border-radius: 15px;
+	padding: 10px 10px;
+
 }
-div { }
+
 
 .a-img {
 	max-width: 100%;

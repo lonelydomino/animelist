@@ -13,23 +13,13 @@
     <% @data.each do |d| %> 
         <li>
             <% @image = d["attributes"]["posterImage"]["small"] %>
-			<% @title = d["attributes"]["titles"]["en"] %> 
+			<% @title = d["attributes"]["canonicalTitle"] %> 
 			<% @rating = d["attributes"]["averageRating"] %> 
 			<% @episode_count = d["attributes"]["episodeCount"] %> 
 			<% @id = d["id"] %> 
-
             <img class="a-img" src="<%= @image %>" alt="<%= @title %>_image">
-			<% if !@title %>
-				<% @title = d["attributes"]["titles"]["en_jp"] %>
-			<% end%>
-			<% if !@title %>
-				<% @title = d["attributes"]["titles"]["ja_jp"] %>
-			<% end%>
-			<% if !@title %>
-				<% @title = d["attributes"]["titles"]["en_us"] %>
-			<% end%>
-            <br>
-<br><br> 
+			
+            <br><br><br> 
             <h2><%= @title %>  </h2>
 		    <h3><%= @title %>   </h3>
             <p>
@@ -43,7 +33,7 @@
     <% end %> 
 	</ul>
 	<% else %>
-	<div> <h4 id="no-results"> No results found! </h4></div>
+	<div id="no-results">  No results found! </div>
 		
 	<% end %>
 

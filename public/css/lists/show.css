@@ -25,21 +25,24 @@ html{
   display: inline-flex;
   height: 40px;
   width: 150px;
-  border: 2px solid #BFC0C0;
+  border: none;
   margin: 20px 20px 20px 20px;
-  color: #BFC0C0;
-  text-transform: uppercase;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 16px;
   font-family: Helvetica, sans-serif;
   letter-spacing: 1.5px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;  
+  font-size: 20px;
+  background-color: #4069E2;
 }
 
 a {
-  color: #BFC0C0;
+  color: #ffffff;
   text-decoration: none;
   
 }
@@ -131,9 +134,7 @@ h1 {
     background-color: rgb(54, 65, 128);
     color: white;
   }
-  a, input[type=submit] {
-    color: hotpink;
-  } 
+  
   #p1 {
     color: white;
     font-size: larger;
@@ -189,6 +190,9 @@ h1 {
 }
 #th-name {
   border-top-left-radius: 15px;
+ 
+}
+#delete-col {
   border-top-right-radius: 15px;
 }
 
@@ -291,6 +295,17 @@ td {
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }
+  input[type=button] {
+    padding: 5px 15px;
+    background-color: Transparent;
+    border: 0 none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;   
+    font-weight: 500;
+    letter-spacing: 0.2px;  
+    font-size: 20px; 
+ }
   
   #circle {
     width: 0%;
@@ -298,7 +313,7 @@ td {
     opacity: 0;
     line-height: 40px;
     border-radius: 50%;
-    background: #257c7c;
+    background: #103483;
     position: absolute;
     transition: all .5s ease-Out;
     top: 20px;
@@ -315,9 +330,12 @@ td {
   }
   
   #button-3:hover a {
-    color: #2D3142;
+    color: #dfdfdf;
   }
   #button-3:hover input {
-    color: #2D3142;
+    color: #c5c5c5;
   }
-  
+  .delete-button:hover{
+    color: #990000;
+  }
+

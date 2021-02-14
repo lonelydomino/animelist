@@ -9,8 +9,7 @@ class API
         hash = {}
      
         hash["id"] = data["id"]
- 
-        hash["name"] = data["attributes"]["titles"]["en_jp"]
+        hash["name"] = data["attributes"]["titles"].first[1]
         hash["desc"] = data["attributes"]["description"]
         hash["title"] = data["attributes"]["titles"]["en"]
         hash["image"] = data["attributes"]["posterImage"]["large"]

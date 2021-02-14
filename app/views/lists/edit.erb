@@ -1,14 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <title>My anime lists</title>
+    <link rel="stylesheet" type="text/css" href="/css/lists/new.css">
+</head>
+<body>
 
-<form action="/animes/<%= @anime.id %>" method="post">
-<input type="hidden" name="_method" value="patch">
-  <label for="name">Name: </label>
-  <input type="text" name="anime[name]" id="name" value="<%= @anime.name %>">
+<% if flash[:error] %>
+  <div id="alert">
+    <span class="closebtn">&times;</span>   
+    <p><%= flash[:error] %></p>
+  </div>
+<% end %>
 
-  <label for="race">Race: </label>
-  <input type="text" name="anime[race]" id="race" value="<%= @anime.race %>">
+<div id="content">
+<h1 id="header-1"> Edit list details! </h1>
 
-  <label for="class">Class: </label>
-  <input type="text" name="anime[anime_class]" id="anime_class" value="<%= @anime.anime_class %>">
+<div class="formstyle">
+  <form name="list_edit" action="/lists/<%= @list.id %>" method="post" >
+    <input type="hidden" name="_method" value="patch">
+    <label for="name">Name </label>
+    <input type="text" name="list[name]" id="name" value="<%= @list.name %>" autocomplete="off">
+    <label for="name">Description </label>
+    <input type="text" name="list[desc]" id="desc" value="<%= @list.desc %>" autocomplete="off">
+    <input type="submit" value="Update">
+  </form>
+  <a href="/lists">
+    <form>
+      <input type="button" value="Go back!">
+    </form>
+  </a>
+</div>
 
-  <input type="submit" value="Update">
-</form>
+</div>
+
+</body>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>

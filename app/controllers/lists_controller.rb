@@ -32,6 +32,7 @@ class ListsController < ApplicationController
 
     post '/lists' do
         @list = List.new(params)
+        @list.desc = "No description" if @list.desc == ""
         current_user.lists.each do |list|
             if @list.name == list.name
                 flash[:error] = "List name already exists!"
@@ -52,7 +53,10 @@ class ListsController < ApplicationController
 
     patch '/lists/:id' do
         @list = List.find(params["id"])
-
+        if List.find_by_name(params["list"]["name"])
+            flash[:error] = "List name already exists!"
+            redirect "/lists/#{@list.id}/edit"
+        end
         if @list.update(params[:list])
             redirect "/lists/#{@list.id}"
         else
