@@ -31,14 +31,14 @@ class AnimeController < ApplicationController
     end
 
     get '/lists/:listid/animes/:listanimeid/delete' do
-        @anime = Anime.find(params["listanimeid"])
-        @list = List.find(params["listid"])
+        anime = Anime.find(params["listanimeid"])
+        list = List.find(params["listid"])
 
-        if @anime.destroy
-            redirect "/lists/#{@list.id}"
+        if anime.destroy
+            redirect "/lists/#{list.id}"
         else
             flash[:error] = "Deletion error!"
-            redirect "/lists/#{@list.id}/animes/#{@anime.id}"
+            redirect "/lists/#{list.id}/animes/#{anime.id}"
         end
     end
 

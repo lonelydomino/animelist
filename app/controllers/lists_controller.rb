@@ -1,12 +1,13 @@
 class ListsController < ApplicationController
+
     configure do 
         set :views, 'app/views'
     end
    
-    get '/lists' do # LINK THATS IN BROWSER
+    get '/lists' do
         redirect_if_not_logged_in
         @lists = current_user.lists
-        erb :'lists/index' # LINK TO ACTUAL FILE
+        erb :'lists/index'
     end
 
     get '/lists/new' do
@@ -17,7 +18,7 @@ class ListsController < ApplicationController
     get '/lists/:id' do
         redirect_if_not_logged_in
         if List.exists?(params[:id])
-            @list = List.find(params["id"])#How to account for this failing if user types ID into address bar?
+            @list = List.find(params["id"])
             erb :'lists/show'
         else
             redirect 'lists' 
@@ -31,46 +32,46 @@ class ListsController < ApplicationController
     end    
 
     post '/lists' do
-        @list = List.new(params)
-        @list.desc = "No description" if @list.desc == ""
-        current_user.lists.each do |list|
-            if @list.name == list.name
+        list = List.new(params)
+        list.desc = "No description" if list.desc == ""
+        current_user.lists.each do |l|
+            if list.name == l.name
                 flash[:error] = "List name already exists!"
                 redirect '/lists/new'
             end
-            if @list.name == ""
+            if list.name == ""
                 flash[:error] = "List name cannot be blank!"
                 redirect '/lists/new'
             end
         end
-        if @list.save
-            current_user.lists << @list
-            redirect "/lists/#{@list.id}"
+        if list.save
+            current_user.lists << list
+            redirect "/lists/#{list.id}"
         else
             redirect '/lists/new'
         end
     end
 
     patch '/lists/:id' do
-        @list = List.find(params["id"])
+        list = List.find(params["id"])
         if List.find_by_name(params["list"]["name"])
             flash[:error] = "List name already exists!"
-            redirect "/lists/#{@list.id}/edit"
+            redirect "/lists/#{list.id}/edit"
         end
         if @list.update(params[:list])
-            redirect "/lists/#{@list.id}"
+            redirect "/lists/#{list.id}"
         else
-            redirect "/lists/#{@list.id}/edit"
+            redirect "/lists/#{list.id}/edit"
         end
     end
 
 
     delete '/lists/:id/delete' do
-        @list = List.find(params["id"])
-        if @list.destroy
+        list = List.find(params["id"])
+        if list.destroy
             redirect "/lists"
         else
-            redirect "/lists/#{@list.id}"
+            redirect "/lists/#{list.id}"
         end
     end
 end

@@ -9,11 +9,12 @@ class ApplicationController < Sinatra::Base
 
     
 
-    get '/' do #intention/location/ and then do
+    get '/' do
         erb :home
     end
 
     helpers do 
+
         def logged_in?
             @current_user ||= User.find_by(id: session["user_id"]) if session["user_id"]
         end
@@ -21,6 +22,7 @@ class ApplicationController < Sinatra::Base
         def current_user
             @current_user = User.find_by(id: session["user_id"])
         end
+
         def current_profile
            @current_profile = current_user.profile 
         end
@@ -39,8 +41,6 @@ class ApplicationController < Sinatra::Base
             total
         end
 
-        def api 
-          
-        end
     end
+    
 end

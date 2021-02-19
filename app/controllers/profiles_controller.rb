@@ -19,10 +19,10 @@ class ProfileController < ApplicationController
 
     patch '/profile/:id' do
         redirect_if_not_logged_in
-        @profile = current_profile
+        profile = current_profile
     
-        if @profile.update(params[:profile])
-            redirect "/profile/#{@profile.id}"
+        if profile.update(params[:profile])
+            redirect "/profile/#{profile.id}"
         else
             redirect "/profile/edit"
         end

@@ -4,6 +4,7 @@ class API
 
     def get_anime_details(idnum)
         response = RestClient.get "https://kitsu.io/api/edge/anime/#{idnum}"
+       
         json = JSON.parse(response)
         data = json["data"]
         hash = {}
@@ -11,7 +12,7 @@ class API
         hash["id"] = data["id"]
         hash["name"] = data["attributes"]["titles"].first[1]
         hash["desc"] = data["attributes"]["description"]
-        hash["title"] = data["attributes"]["titles"]["en"]
+        hash["title"] = data["attributes"]["titles"].first[1]
         hash["image"] = data["attributes"]["posterImage"]["large"]
         hash
      end
