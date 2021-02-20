@@ -1,8 +1,8 @@
-ENV['SINATRA_ENV'] ||= 'development' #set enviroment variable
+ENV['SINATRA_ENV'] ||= 'development'
 require './config/environment'
 
 
-use Rack::MethodOverride#allows put patch and delete requests
+use Rack::MethodOverride
 
 if ActiveRecord::Base.connection.migration_context.needs_migration?
     raise 'Migrations are pending!'
@@ -14,4 +14,4 @@ use AnimeController
 use SessionsController
 use SearchController
 use ProfileController
-run ApplicationController #can only use run one time, entry point of app
+run ApplicationController 

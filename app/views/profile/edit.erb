@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>My anime lists</title>
+    <title>Profile edit</title>
     <link rel="stylesheet" type="text/css" href="/css/profile/edit.css">
     <script>
 function validateForm() {
@@ -25,8 +25,10 @@ function validateForm() {
     return false;
   }
 }
+
 </script>
 </head>
+
 <br><br><br><br>
 <div class="formstyle">
     <form name="profile_edit" action="/profile/<%= current_profile.id %>" method="post" onsubmit="return validateForm()">

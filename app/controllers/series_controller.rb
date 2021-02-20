@@ -3,8 +3,6 @@ class AnimeController < ApplicationController
         set :views, 'app/views'
     end
 
-
-
     get '/animes/:animeid' do
         @animeid = params["animeid"]
         @details = API.new.get_anime_details(params["animeid"])
@@ -18,7 +16,6 @@ class AnimeController < ApplicationController
         @list.animes.each do |anime|
             if anime.name == @new_anime.name
                 flash[:error] = "Anime already in list!"
-  
                 redirect "/animes/#{params["animeid"]}"
             end
         end

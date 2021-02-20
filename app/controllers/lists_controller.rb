@@ -7,6 +7,7 @@ class ListsController < ApplicationController
     get '/lists' do
         redirect_if_not_logged_in
         @lists = current_user.lists
+        binding.pry
         erb :'lists/index'
     end
 
